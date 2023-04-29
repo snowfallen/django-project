@@ -5,4 +5,4 @@ Django simple project for learning main aspect this framework
 3. Create django project running:
 4. ``docker-compose -f docker-compose.yml run --rm django django-admin startproject <name of project> .``
 5. Run: ``sh exec.sh runserver`` fot running django localserver.
-6. The secret key must be a large random value and it must be kept secret, copy your SECRET_KEY to .env
+6. The secret key must be a large random value and it must be kept secret, copy your SECRET_KEY to secret_key.txt file in your root dir (don't forget add secret_key to your .gitignore file)
