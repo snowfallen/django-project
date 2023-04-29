@@ -6,10 +6,7 @@ from .models import Menu
 
 
 # Create your views here.
-def index(request):
-    menu_item = Menu
-    context = {
-        'menu_item': menu_item
-    }
-    return render(request, 'website/index.html', context)
+class Index(generic.TemplateView):
+    template_name = 'website/index.html'
+
 
