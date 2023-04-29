@@ -54,6 +54,17 @@ services:
     networks:
       - app
 
+  node:
+    image: node
+    container_name: '${APP_NAME}-node'
+    working_dir: /var/www/html
+#    entrypoint: 'npm'
+    volumes:
+      - .:/var/www/html
+    networks:
+      - app
+
+
 networks:
     app:
         driver: bridge

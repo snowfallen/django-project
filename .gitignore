@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 secret_key.txt
+node_modules
 # C extensions
 *.so
 
