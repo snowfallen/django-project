@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-docker-compose run --rm python manage.py shell
+docker-compose run --rm django python manage.py shell
