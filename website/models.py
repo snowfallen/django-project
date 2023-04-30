@@ -3,9 +3,11 @@ from django.db import models
 # Create your models here.
 
 
-class Menu(models.Model):
-    menu_item = models.CharField(max_length=100)
+class Post(models.Model):
+    post_title = models.CharField(max_length=100)
+    post_content = models.TextField
+    post_created = models.DateTimeField("date published")
 
     def __str__(self):
-        return self.menu_item
+        return self.post_title
 
