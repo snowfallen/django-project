@@ -1,4 +1,29 @@
 {% extends 'base.html' %}
-<div class="container">
-    
-</div>
+{% block content %}
+    <div class="container p-3 d-flex justify-content-between">
+        <div class="my-3 p-3 bg-body rounded shadow-sm w-25">
+            <h6 class="border-bottom pb-2 mb-0">Recent updates</h6>
+            <div class="text-body-secondary pt-3">
+                <p class="pb-3 mb-0 small lh-sm">
+                    <strong class="d-block text-gray-dark">Title</strong>
+                    Some representative placeholder content, with some information about this user. Imagine this being
+                    some sort of status update, perhaps?
+                </p>
+                <p class="text-secondary float-end border-bottom w-100">Created: 5.05.23 20:42</p>
+            </div>
+        </div>
+        <div class="card-container w-75 m-3">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h5 class="card-title">Card title</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda consequuntur cumque delectus deleniti deserunt doloribus, earum excepturi explicabo in ipsa non, odio provident quis reprehenderit repudiandae tempora tempore vero.</p>
+                </div>
+                <div class="card-footer">
+                    <p class="text-secondary float-end">Created: 5.05.23 20:42</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
