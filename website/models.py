@@ -5,7 +5,7 @@ from django.db import models
 
 class Post(models.Model):
     post_title = models.CharField(max_length=100)
-    post_content = models.TextField
+    post_content = models.TextField(null=True)
     post_created = models.DateTimeField("date published")
 
     def __str__(self):

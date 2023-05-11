@@ -1,3 +1,9 @@
 from django.contrib import admin
+from website.models import Post
 
-# Register your models here.
+
+class PostAdmin(admin.ModelAdmin):
+    model = Post
+
+
+admin.site.register(Post, PostAdmin)
